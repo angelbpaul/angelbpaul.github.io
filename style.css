@@ -5,9 +5,6 @@ body {
   background-color: #FBF8EF;
 }
 
-.text-content {
-  max-width: 50%;
-}
 
 .text-content h1 {
 
@@ -26,7 +23,7 @@ body {
 
 .image-section img {
   float: right; /* Or left */
-  margin: 0 0 -80px 20px; /* Adds spacing around the image */
+  margin: 0 0 20px 20px; /* Adds spacing around the image */
   width: 250px; /* Adjust size as needed */
   height: auto;
   border-radius: 8px;
