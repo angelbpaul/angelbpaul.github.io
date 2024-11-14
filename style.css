@@ -23,8 +23,10 @@ body {
 }
 
 .text-content p {
+  font-family: "Source Code Pro", monospace;
   font-size: 18px;
   color: #78B3CE;
+  
 }
 
 .image-section img {
