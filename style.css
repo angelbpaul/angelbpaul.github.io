@@ -17,7 +17,6 @@ p {
   color: #78B3CE;
 }
 
-
 .image-section img {
   float: right; /* Or left */
   margin: 0 0 20px 20px; /* Adds spacing around the image */
@@ -39,25 +38,10 @@ p {
   text-decoration: none;   /* Remove underline */
   padding: 14px 20px;      /* Spacing around links */
   font-size: 16px;
-  position: relative;
-  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar a:hover {
   background-color: #78B3CE;  /* Darker background on hover */
   color: #ffffff;
   border-radius: 4px;      /* Rounded corners on hover */
-  transform: translateY(-3px); /* Slide up effect */
-}
-
-.navbar a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #ff9900;
-  transition: width 0.3s ease;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
