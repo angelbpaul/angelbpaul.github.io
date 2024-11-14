@@ -23,7 +23,7 @@ body {
 
 .image-section img {
   float: left; /* Or left */
-  margin: 0 0 20px 20px; /* Adds spacing around the image */
+  margin: 0 0 80px 20px; /* Adds spacing around the image */
   width: 250px; /* Adjust size as needed */
   height: auto;
   border-radius: 8px;
@@ -32,7 +32,7 @@ body {
 /* Navigation Bar Styling */
 .navbar {
   display: flex;
-  justify-content: center; /* Center the links horizontally */
+  justify-content: left; /* Center the links horizontally */
   background-color: #F96E2A;  /* Dark background color */
   padding: 10px 0;         /* Padding for the bar */
 }
