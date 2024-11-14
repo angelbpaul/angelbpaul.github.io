@@ -22,7 +22,7 @@ body {
 }
 
 .image-section img {
-  float: right; /* Or left */
+  float: left; /* Or left */
   margin: 0 0 20px 20px; /* Adds spacing around the image */
   width: 250px; /* Adjust size as needed */
   height: auto;
