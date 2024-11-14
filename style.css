@@ -20,7 +20,7 @@ p {
 .image-section img {
   float: right; /* Or left */
   margin: 0 0 20px 20px; /* Adds spacing around the image */
-  width: 300px; /* Adjust size as needed */
+  width: 250px; /* Adjust size as needed */
   height: auto;
   border-radius: 8px;
 }
