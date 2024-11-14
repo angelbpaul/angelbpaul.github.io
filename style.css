@@ -19,7 +19,7 @@ body {
 
 .text-content h1 {
   font-family: "Micro 5", sans-serif;
-  font-size: 150px;
+  font-size: 120px;
   color: #F96E2A;
 }
 
@@ -31,9 +31,10 @@ body {
 }
 
 .image-section img {
-  width: 250px; /* Adjust size as needed */
-  height: auto;
-  border-radius: 8px;
+  width: 400px; /* Adjust size as needed */
+  height: auto; /* This maintains the aspect ratio */
+  border-radius: 8px; /* Optional: rounds the corners */
+  margin: 0 20px 20px 0; /* Adds spacing around the image */
 }
 
 
