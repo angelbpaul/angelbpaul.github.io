@@ -42,7 +42,7 @@ body {
   display: flex;
   justify-content: right; /* Center the links horizontally */
   background-color: #F96E2A;  /* Dark background color */
-  padding: 10px 0;         /* Padding for the bar */
+  padding: 10px 20px;         /* Padding for the bar */
 }
 
 .navbar a {
