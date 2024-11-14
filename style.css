@@ -47,6 +47,7 @@ body {
 }
 
 .navbar a {
+  font-family: "Micro 5", sans-serif;
   color: #FBF8EF;          /* White text color */
   text-decoration: none;   /* Remove underline */
   padding: 14px 20px;      /* Spacing around links */
