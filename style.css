@@ -5,40 +5,24 @@ body {
   background-color: #FBF8EF;
 }
 
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.text-content {
-  max-width: 50%;
-}
-
-
-.text-content h1 {
+h1 {
+  
   font-family: "Micro 5", sans-serif;
-  font-size: 3em;
   color: #F96E2A;
 }
 
-.text-content p {
-  font-size: 1.2em;
+p {
+  
   font-size: 18px;
   color: #78B3CE;
 }
 
-.image-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 50%;
-}
 
 .image-section img {
-  max-width: 250px; /* Adjust size as needed */
+  float: right; /* Or left */
+  margin: 0 0 20px 20px; /* Adds spacing around the image */
+  width: 250px; /* Adjust size as needed */
+  height: auto;
   border-radius: 8px;
 }
 
