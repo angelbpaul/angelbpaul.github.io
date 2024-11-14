@@ -17,37 +17,6 @@ p {
   color: #78B3CE;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.text-content {
-  max-width: 50%;
-}
-
-.text-content h1 {
-  font-size: 3em;
-  color: #F96E2A;
-}
-
-.text-content p {
-  font-size: 1.2em;
-  color: #78B3CE;
-}
-
-.links a {
-  margin-right: 10px;
-  color: #666;
-  text-decoration: none;
-}
-
-.image-content img {
-  max-width: 300px;
-  border-radius: 10px;
-}
 
 .image-section img {
   float: right; /* Or left */
