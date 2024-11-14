@@ -1,16 +1,18 @@
 body {
-  font-family: "Micro 5", sans-serif;
+  font-family: Arial, sans-serif;
  
   margin: 20px;
   background-color: #FBF8EF;
 }
 
 h1 {
+  
+  font-family: "Micro 5", sans-serif;
   color: #F96E2A;
 }
 
 p {
-  font-family: Arial, sans-serif;
+  
   font-size: 18px;
   color: #78B3CE;
 }
