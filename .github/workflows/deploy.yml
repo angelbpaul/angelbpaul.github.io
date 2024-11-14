@@ -1,23 +1,24 @@
-name: Deploy to GitHub Pages
+name: Deploy Pages
 
 on:
   push:
     branches:
-      - main  # or 'master', depending on your default branch
-
-permissions:
-  id-token: write
-  contents: read
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write  # Ensure that ID token write permission is enabled
+      contents: read   # Grant read access to the repository contents if needed
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Build and Deploy
+      # Add your build steps here...
+
+      - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
-          # Add any required configuration here
+          # Add any required inputs here
