@@ -5,13 +5,17 @@ body {
   background-color: #FBF8EF;
 }
 
-h1 {
+.text-content {
+  max-width: 50%;
+}
+
+.text-content h1 {
   
   font-family: "Micro 5", sans-serif;
   color: #F96E2A;
 }
 
-p {
+.text-content p {
   
   font-size: 18px;
   color: #78B3CE;
