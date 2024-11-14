@@ -23,8 +23,15 @@ body {
   color: #F96E2A;
 }
 
-.text-content p {
+.text-content h2 {
   font-family: "Source Code Pro", monospace;
+  font-size: 18px;
+  color: #78B3CE;
+  
+}
+
+.text-content p {
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: #78B3CE;
   
