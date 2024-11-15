@@ -20,6 +20,13 @@ body {
   margin: 0 auto;
 }
 
+.aboutheader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
 
 
 .text-content {
@@ -40,7 +47,7 @@ h2 {
   
 }
 
-.about-container h1 {
+.aboutheader-container h1 {
   font-family: "Micro 5", sans-serif;
   font-size: 90px;
   color: #F96E2A;
