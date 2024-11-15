@@ -94,32 +94,35 @@ p {
 
 
 /* clickable box containers for projects*/
-.container {
-  display: flex; /* Flexbox to make items side by side */
-  gap: 20px; /* Space between the boxes */
+/* Add this for a flex container */
+.flex-container {
+  display: flex;
+  gap: 20px; /* Space between boxes */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 .clickable-box {
   text-decoration: none; /* Remove underline from links */
   color: #333;
-  width: 200px;
+  width: 250px; /* Set a fixed width for each box */
   border: 2px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  text-align: left; /* Align text to the left */
+  text-align: center; /* Center the text inside the box */
   transition: transform 0.3s, box-shadow 0.3s;
   background-color: #fff;
   padding: 10px; /* Add padding inside the box for spacing */
 }
 
 .clickable-box img {
-  width: 300px; /* Make the image fit the box */
+  width: 250px; /* Make the image fit the box */
   height: auto; /* Maintain aspect ratio */
-  margin-bottom: 10px; /* Add space between image and text */
+  margin-bottom: 10px; /* Space between image and text */
 }
 
 .clickable-box p {
   margin: 10px 0;
   font-size: 16px;
+  color: #333;
   padding: 5px 0; /* Adjust padding for better spacing */
 }
