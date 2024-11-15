@@ -112,7 +112,9 @@ p {
 }
 
 .clickable-box img {
-  width: 100%; /* Make the image fit the box */
+  width: 400px; /* Adjust size as needed */
+  height: auto; /* This maintains the aspect ratio */
+  border-radius: 12px; /* Optional: rounds the corners */
   height: auto; /* Maintain aspect ratio */
 }
 
