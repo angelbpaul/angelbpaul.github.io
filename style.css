@@ -20,17 +20,6 @@ body {
   margin: 0 auto;
 }
 
-.about-container h1 {
-  font-family: "Micro 5", sans-serif;
-  font-size: 120px;
-  color: #F96E2A;
-}
-
-.about-container p {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  color: #78B3CE;
-}
 
 
 .text-content {
@@ -38,20 +27,20 @@ body {
   padding-right: 20px; /* Add spacing between text and image */
 }
 
-.text-content h1 {
+h1 {
   font-family: "Micro 5", sans-serif;
   font-size: 120px;
   color: #F96E2A;
 }
 
-.text-content h2 {
+h2 {
   font-family: "Source Code Pro", monospace;
   font-size: 18px;
   color: #78B3CE;
   
 }
 
-.text-content p {
+p {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: #78B3CE;
