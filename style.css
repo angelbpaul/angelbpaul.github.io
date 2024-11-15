@@ -40,6 +40,12 @@ h2 {
   
 }
 
+h3 {
+  font-family: "Micro 5", sans-serif;
+  font-size: 90px;
+  color: #F96E2A;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
