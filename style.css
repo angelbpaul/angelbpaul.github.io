@@ -49,7 +49,7 @@ h2 {
 
 .aboutheader-container h1 {
   font-family: "Micro 5", sans-serif;
-  padding-right: 40px; /* Adjust this value to move the h1 left */
+  padding-right: 100px; /* Adjust this value to move the h1 left */
   font-size: 90px;
   color: #F96E2A;
 }
