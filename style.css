@@ -113,7 +113,7 @@ p {
 }
 
 .clickable-box img {
-  width: 100%; /* Make the image fit the box */
+  width: 300px; /* Make the image fit the box */
   height: auto; /* Maintain aspect ratio */
   margin-bottom: 10px; /* Add space between image and text */
 }
