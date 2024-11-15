@@ -91,3 +91,38 @@ p {
   color: #ffffff;
   border-radius: 4px;      /* Rounded corners on hover */
 }
+
+
+/* clickable box containers for projects*/
+.container {
+  display: flex;
+  gap: 20px; /* Space between boxes */
+}
+
+.clickable-box {
+  text-decoration: none; /* Remove underline from links */
+  color: #333;
+  width: 200px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+}
+
+.clickable-box img {
+  width: 100%; /* Make the image fit the box */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.clickable-box p {
+  margin: 10px 0;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.clickable-box:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
