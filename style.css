@@ -38,14 +38,16 @@ h1 {
   font-family: "Micro 5", sans-serif;
   font-size: 120px;
   color: #4C4B16;
-  line-height: 0.4;
+  line-height: 1; /* Reduce line height for tighter spacing */
+  margin-bottom: 10px; /* Adjust spacing below the h1 */
 }
 
 h2 {
   font-family: "Source Code Pro", monospace;
   font-size: 18px;
   color: #898121;
-  line-height: 0.4;
+  line-height: 1.2; /* Reduce line height for tighter spacing */
+  margin-top: 5px; /* Adjust spacing above the p */
   
 }
 
