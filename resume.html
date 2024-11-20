@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glassmorphism Effect</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      background-image: url('assets\background.jpg'); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Content container with glassmorphism */
+    .content {
+      position: relative;
+      z-index: 1; /* Ensure content is above the background */
+      color: #000; /* Adjust text color for visibility */
+      text-align: center;
+      padding: 20px 40px;
+      background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+      backdrop-filter: blur(8px); /* Apply blur effect */
+      border-radius: 15px; /* Rounded corners */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a soft shadow */
+    }
+  </style>
+</head>
+<body>
+  <!-- Content Section -->
+  <div class="content">
+    <h1>Glassmorphism Effect</h1>
+    <p>This text is on a semi-transparent, blurred background.</p>
+  </div>
+</body>
+</html>
