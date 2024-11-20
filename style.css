@@ -39,12 +39,14 @@ h1 {
   font-size: 120px;
   color: #4C4B16;
   line-height: 0.7;
+  line-height: 1.0;
 }
 
 h2 {
   font-family: "Source Code Pro", monospace;
   font-size: 18px;
   color: #898121;
+  line-height: 1.5;
   
 }
 
