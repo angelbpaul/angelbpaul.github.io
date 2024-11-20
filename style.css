@@ -66,7 +66,7 @@ p {
   width: 400px; /* Adjust size as needed */
   height: auto; /* This maintains the aspect ratio */
   border-radius: 12px; /* Optional: rounds the corners */
-  margin: 0 20px 20px 0; /* Adds spacing around the image */
+  margin: 20px 20px 20px 0; /* Adds spacing around the image */
 }
 
 
