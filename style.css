@@ -67,7 +67,7 @@ p {
 }
 
 .image-section {
-  width: 500px; /* Adjust size as needed */
+  width: 700px; /* Adjust size as needed */
   height: auto; /* This maintains the aspect ratio */
   border-radius: 20px; /* Optional: rounds the corners */
   margin: 50px 20px 20px 0; /* Adds spacing around the image */
