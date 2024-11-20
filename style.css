@@ -88,7 +88,7 @@ p {
 }
 
 .navbar a:hover {
-  background-color: #78B3CE;  /* Darker background on hover */
+  background-color: #F87A53;  /* Darker background on hover */
   color: #ffffff;
   border-radius: 4px;      /* Rounded corners on hover */
 }
