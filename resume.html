@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glassmorphism Effect</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: Arial, sans-serif;
-      background-image: url('assets\ba'); /* Replace with your image */
-      background-size: cover;
-      background-position: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
 
-    /* Content container with glassmorphism */
-    .content {
-      position: relative;
-      z-index: 1; /* Ensure content is above the background */
-      color: #000; /* Adjust text color for visibility */
-      text-align: center;
-      padding: 20px 40px;
-      background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
-      backdrop-filter: blur(8px); /* Apply blur effect */
-      border-radius: 15px; /* Rounded corners */
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a soft shadow */
-    }
-  </style>
+        #animatedTitle {
+            font-size: 3em;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
 </head>
 <body>
-  <!-- Content Section -->
-  <div class="content">
-    <h1>Glassmorphism Effect</h1>
-    <p>This text is on a semi-transparent, blurred background.</p>
-  </div>
+    <h1 id="animatedTitle">Welcome to My Website!</h1>
+
+    <script>
+        // Select the title element
+        const title = document.getElementById('animatedTitle');
+
+        // Animation variables
+        let colorIndex = 0;
+        const colors = ['red', 'blue', 'green', 'purple', 'orange'];
+        let position = 0;
+        let maxPosition = 200;
+
+        // Function to animate the title
+        function animateTitle() {
+            // Change color
+            title.style.color = colors[colorIndex];
+            colorIndex = (colorIndex + 1) % colors.length;
+
+            // Move the title horizontally
+            position = (position + 10) % maxPosition;
+            title.style.transform = `translateX(${position}px)`;
+
+            // Reset position after it reaches the maxPosition
+            if (position === 0) {
+                title.style.fontSize = `${Math.random() * 4 + 2}em`; // Change font size randomly
+            }
+        }
+
+        // Set an interval to call the animation every 500ms
+        setInterval(animateTitle, 500);
+    </script>
 </body>
 </html>
