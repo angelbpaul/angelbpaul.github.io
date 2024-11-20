@@ -6,10 +6,10 @@ body {
 
 .profile-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 80%;
-  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: space-between; /* Distributes space evenly */
+  max-width: 90%; /* Slightly larger width */
+  margin: 20px auto; /* Adds some top and bottom spacing */
 }
 
 .about-container {
@@ -31,7 +31,7 @@ body {
 
 .text-content {
   max-width: 50%;
-  padding-right: 120px; /* Add spacing between text and image */
+  padding-right: 200px;
 }
 
 h1 {
@@ -67,7 +67,7 @@ p {
   width: 400px; /* Adjust size as needed */
   height: auto; /* This maintains the aspect ratio */
   border-radius: 12px; /* Optional: rounds the corners */
-  margin: 100px 20px 20px 0; /* Adds spacing around the image */
+  margin: 50px 20px 20px 0; /* Adds spacing around the image */
 }
 
 
