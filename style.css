@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
-  background-color: #FBF8EF;
+  background-color: #E6C767;
 }
 
 .profile-container {
@@ -37,14 +37,14 @@ body {
 h1 {
   font-family: "Micro 5", sans-serif;
   font-size: 120px;
-  color: #F96E2A;
+  color: #4C4B16;
   line-height: 0.7;
 }
 
 h2 {
   font-family: "Source Code Pro", monospace;
   font-size: 18px;
-  color: #78B3CE;
+  color: #898121;
   
 }
 
@@ -52,14 +52,14 @@ h2 {
   font-family: "Micro 5", sans-serif;
   padding-right: 100px; /* Adjust this value to move the h1 left */
   font-size: 90px;
-  color: #F96E2A;
+  color: #4C4B16;
 }
 
 p {
 
   font-family: "Quicksand", sans-serif;
   font-size: 18px;
-  color: #78B3CE;
+  color: #4C4B16;
   
 }
 
