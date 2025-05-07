@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angel Benny Paul's Portfolio</title>
+  <!--Angel Project Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap" rel="stylesheet">
+
+  <!--Paragraph Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=M+PLUS+Code+Latin:wght@100..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+
+    .home {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 30px;
+    }
+
+    .home-content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: left;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <h2 class="nav-logo">angelbennypaul</h2>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="profile-container">
+    <!-- Background Circle -->
+    <div class="background-circle-wrapper">
+      <div class="background-circle"></div>
+    </div>
+    
+    <!-- Particles Container -->
+    <div id="particles" class="particles"></div>
+    
+<!-- Terminal Section -->
+<div class="terminal-section">
+    <div class="terminal">
+      <div class="terminal-header">
+        <div class="terminal-buttons">
+          <div class="terminal-button terminal-close"></div>
+          <div class="terminal-button terminal-minimize"></div>
+          <div class="terminal-button terminal-expand"></div>
+        </div>
+        <div class="terminal-title">angel@portfolio: ~/projects</div>
+      </div>
+      <div class="terminal-content">
+        <div class="command-line">
+          <div class="prompt">angel@portfolio:~$</div>
+          <div class="command">ls -la projects/</div>
+        </div>
+        <div class="command-output">
+total 4
+drwxr-xr-x  5 angel users 4096 May 5 2025 .
+drwxr-xr-x 15 angel users 4096 May 5 2025 ..
+drwxr-xr-x  3 angel users 4096 May 5 2025 autodrive_mobility
+drwxr-xr-x  4 angel users 4096 May 5 2025 kinarm_systems
+drwxr-xr-x  2 angel users 4096 May 5 2025 assistive_tech
+        </div>
+        <div class="command-line">
+          <div class="prompt">angel@portfolio:~$</div>
+          <div class="command">cat ~/about/skills.txt</div>
+        </div>
+        <div class="command-output">
+• Robotics Engineering
+• Mechatronics Design
+• Simulink Programming
+• Embedded Systems
+• Healthcare Technology
+• Human-Centered Design
+• Project Leadership
+• Technical Communication
+        </div>
+        <div class="command-line">
+          <div class="prompt">angel@portfolio:~$</div>
+          <div class="command typing">./contact_me.sh</div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  
+
+  <div class="bottom-bar">
+    <p>
+      &copy; 2025 Angel Benny Paul • 
+      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a> | 
+      <a href="https://github.com/your-github" target="_blank">GitHub</a> | 
+      <a href="mailto:your.email@example.com">Email</a>
+    </p>
+  </div>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+    // Typed.js for dynamic text
+    var typed = new Typed(".auto-type", {
+      strings: ["The Angel Project"],
+      typeSpeed: 70,
+      backSpeed: 150,
+      loop: false,
+    });
+
+    var typed2 = new Typed(".auto-type2", {
+      strings: ["Mechatronics and Robotics engineering student @ Queen's University"],
+      typeSpeed: 15,
+      backSpeed: 150,
+      loop: false,
+      showCursor: true,
+      cursorChar: ' ',
+    });
+
+    var typed3 = new Typed(".auto-type3", {
+      strings: ["./whoami.sh"],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true,
+      showCursor: true,
+      cursorChar: '|',
+    });
+
+    // Initialize particles.js
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof particlesJS !== 'undefined') {
+        particlesJS('particles', {
+          "particles": {
+            "number": {
+              "value": 50,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#E5E5CB"
+            },
+            "shape": {
+              "type": "circle",
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              }
+            },
+            "opacity": {
+              "value": 0.3,
+              "random": true,
+              "anim": {
+                "enable": true,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 3,
+              "random": true,
+              "anim": {
+                "enable": true,
+                "speed": 2,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#E5E5CB",
+              "opacity": 0.2,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 1,
+              "direction": "none",
+              "random": true,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "grab"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 140,
+                "line_linked": {
+                  "opacity": 0.5
+                }
+              },
+              "push": {
+                "particles_nb": 4
+              }
+            }
+          },
+          "retina_detect": true
+        });
+      }
+    });
+    
+    // Add scroll animation for elements
+    window.addEventListener('scroll', function() {
+      const scrollable = document.querySelectorAll('.project-card, .description-box, .terminal');
+      scrollable.forEach(element => {
+        const position = element.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2;
+        
+        if (position < screenPosition) {
+          element.classList.add('show-element');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
