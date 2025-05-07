@@ -4,58 +4,278 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Angel Benny Paul's Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Micro+5&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Micro+5&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Micro+5&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
- 
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Micro+5&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <!--Angel Project Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap" rel="stylesheet">
+
+  <!--Paragraph Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=M+PLUS+Code+Latin:wght@100..700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+
+    .home {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 30px;
+    }
+
+    .home-content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: left;
+    }
+  </style>
+
 </head>
 <body>
   
   <!-- Navigation Bar -->
   <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="resume.html">Resume</a>
-    <a href="projects.html">Projects</a>
+    <h2 class="nav-logo">angelbennypaul</h2>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+    </div>
   </nav>
 
-<!-- Main Content -->
+  <!-- Main Content -->
   <div class="profile-container">
-    <div class="text-content">
-      <h1>Angel<br>Benny Paul</h1>
-      <h2>
-        Mechatronics and Robotics Engineer @
-        <a href="https://www.queensu.ca/" target="_blank" style="text-decoration: none; color: #F87A53;">
-            Queen's University
-        </a>
-    </h2>
-
+    <!-- Background Circle -->
+    <div class="background-circle-wrapper">
+      <div class="background-circle"></div>
     </div>
-    <div class="image-section">
-      <img src="assets/Angel_Benny_Paul.jpg" alt="Angel Benny Paul Headshot">
+    
+    <!-- Particles Container -->
+    <div id="particles" class="particles"></div>
+    
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <h1><span class="auto-type"></span></h1>
+      <h2><span class="auto-type2"></span></h2>
+      
+      <!-- Skills Pills -->
+      <div class="skills-container">
+        <div class="skill-pill floating" style="animation-delay: 0s">Mechatronics</div>
+        <div class="skill-pill floating" style="animation-delay: 0.5s">Robotics</div>
+        <div class="skill-pill floating" style="animation-delay: 1s">Biomedical</div>
+        <div class="skill-pill floating" style="animation-delay: 1.5s">Simulink</div>
+        <div class="skill-pill floating" style="animation-delay: 2s">Autonomous</div>
+        <div class="skill-pill floating" style="animation-delay: 0.7s">Healthcare</div>
+      </div>
+    </div> 
+      
+  </div>
+    
+    <!-- About Me Preview -->
+  
+    <div class="description-box">
+      <div class="description-text">
+        <p>
+          I'm a Mechatronics and Robotics Engineering student at Queen's University with a strong interest in biomedical engineering and designing systems that directly impact healthcare. I'm passionate about blending robotics and human-centered design to create accessible, user-friendly solutions that improve lives.
+        </p>
+        <p>
+          My hands-on experience includes working with KINARM robotic systems at the LIMB Lab, where I focused on improving testing protocols and supporting clinical diagnostics. I developed and refined testing programs using Simulink, managed data integrity in REDCap, and collaborated with healthcare professionals during data collection, deepening my understanding of assistive technologies.
+        </p>
+        <p>
+          A pivotal moment in my third year was joining Queen's AutoDrive, where I worked in both the embedded systems and operations divisions. In the SAE GM AutoDrive Mobility Innovation Challenge 2024, I led a team of four to design a level 5 autonomous car aimed at assisting people with disabilities, particularly focusing on individuals with cerebral palsy.
+        </p>
+        <div class="social-buttons">
+          <a href="about.html" class="cta-button">Learn More</a>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/angelbennypaul/" target="_blank" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://github.com/angelbpaul" target="_blank" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="mailto:angelbennypaul@gmail.com" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="description-image">
+        <img src="assets/angel_headshot.jpg" alt="Angel Benny Paul">
+      </div>
     </div>
-  </div>
+    
+    
+  
 
-<!-- About Header -->
-  <div class="aboutheader-container">
-    <h1>About me </h1>
-  </div>
-
-
-<!-- About Content -->
-  <div class="about-container">
-  <p> 
-    Hello! I’m a Mechatronics and Robotics Engineering student at Queen’s University with a deep passion for advancing the medical robotics industry. My journey in engineering has been driven by a desire to blend technology and healthcare to create a positive, tangible impact on people’s lives. 🌍<br><br>
-    
-    I'm fascinated by robotics, control systems, and machine learning, and I aim to leverage these fields to develop innovative solutions that revolutionize healthcare. By working on medical robotics, I hope to enhance patient well-being and support healthcare professionals in delivering high-quality care through cutting-edge technology. <br><br>
-    
-    I’m committed to pushing the boundaries of what’s possible, exploring new ways to make a meaningful difference in the future of healthcare. Whether it's through developing intelligent surgical robots, creating advanced diagnostic tools, or building systems that empower doctors and patients alike, I believe that technology has an incredible role to play in transforming healthcare for the better. 🌱<br><br>
-    
-    If you're interested in healthcare, robotics, AI, or just want to connect and discuss ideas, feel free to reach out! I’m always open to new conversations, collaborations, and learning opportunities. <br> Let’s connect to talk! 😊
-    
+  <div class="bottom-bar">
+    <p>
+      &copy; 2025 Angel Benny Paul • 
+      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a> | 
+      <a href="https://github.com/your-github" target="_blank">GitHub</a> | 
+      <a href="mailto:your.email@example.com">Email</a>
     </p>
   </div>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+    // Typed.js for dynamic text
+    var typed = new Typed(".auto-type", {
+      strings: ["The Angel Project"],
+      typeSpeed: 70,
+      backSpeed: 150,
+      loop: false,
+    });
+
+    var typed2 = new Typed(".auto-type2", {
+      strings: ["Mechatronics and Robotics engineering student @ Queen's University"],
+      typeSpeed: 15,
+      backSpeed: 150,
+      loop: false,
+      showCursor: true,
+      cursorChar: ' ',
+    });
+
+    var typed3 = new Typed(".auto-type3", {
+      strings: ["./whoami.sh"],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true,
+      showCursor: true,
+      cursorChar: '|',
+    });
+
+    // Initialize particles.js
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof particlesJS !== 'undefined') {
+        particlesJS('particles', {
+          "particles": {
+            "number": {
+              "value": 50,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#E5E5CB"
+            },
+            "shape": {
+              "type": "circle",
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              }
+            },
+            "opacity": {
+              "value": 0.3,
+              "random": true,
+              "anim": {
+                "enable": true,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 3,
+              "random": true,
+              "anim": {
+                "enable": true,
+                "speed": 2,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#E5E5CB",
+              "opacity": 0.2,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 1,
+              "direction": "none",
+              "random": true,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "grab"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 140,
+                "line_linked": {
+                  "opacity": 0.5
+                }
+              },
+              "push": {
+                "particles_nb": 4
+              }
+            }
+          },
+          "retina_detect": true
+        });
+      }
+    });
+    
+    // Add scroll animation for elements
+    window.addEventListener('scroll', function() {
+      const scrollable = document.querySelectorAll('.project-card, .description-box, .terminal');
+      scrollable.forEach(element => {
+        const position = element.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2;
+        
+        if (position < screenPosition) {
+          element.classList.add('show-element');
+        }
+      });
+    });
+  </script>
 </body>
 </html>

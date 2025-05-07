@@ -1,178 +1,494 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  background-color: #E6C767;
-}
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-.profile-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; /* Distributes space evenly */
-  max-width: 90%; /* Slightly larger width */
-  margin: 20px auto; /* Adds some top and bottom spacing */
-}
+    html, body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      overscroll-behavior: none;
+      height: 100%;
+      font-family: "M PLUS Code Latin", monospace;
+      background-color: #030303;
+      color: #E5E5CB;
+    }
 
-.about-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 80%;
-  margin: 0 auto;
-}
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-.aboutheader-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-
-.text-content {
-  max-width: 50%;
-  padding-right: 200px;
-}
-
-h1 {
-  font-family: "Micro 5", sans-serif;
-  font-size: 120px;
-  color: #4C4B16;
-  line-height: 1; /* Reduce line height for tighter spacing */
-  margin-bottom: 10px; /* Adjust spacing below the h1 */
-}
-
-h2 {
-  font-family: "Micro 5", sans-serif;
-  font-size: 25px;
-  color: #898121;
-  line-height: 1.2; /* Reduce line height for tighter spacing */
-  margin-top: 5px; /* Adjust spacing above the p */
-  
-}
-
-.aboutheader-container h1 {
-  font-family: "Micro 5", sans-serif;
-  padding-right: 70px; /* Adjust this value to move the h1 left */
-  font-size: 90px;
-  color: #4C4B16;
-}
-
-p {
-
-  font-family: "Quicksand", sans-serif;
-  font-size: 18px;
-  color: #4C4B16;
-  
-}
-
-.image-section img {
-  width: 500px; /* Adjust size as needed */
-  height: auto; /* This maintains the aspect ratio */
-  border-radius: 90px; /* Optional: rounds the corners */
-  margin: 50px 20px 20px 0; /* Adds spacing around the image */
-}
-
-
-/* Navigation Bar Styling */
-.navbar {
-  display: flex;
-  justify-content: right; /* Center the links horizontally */
-  background-color: #F96E2A;  /* Dark background color */
-  padding: 10px 20px;         /* Padding for the bar */
-}
-
-.navbar a {
-  font-family: "Micro 5", sans-serif;
-  color: #FBF8EF;          /* White text color */
-  text-decoration: none;   /* Remove underline */
-  padding: 14px 20px;      /* Spacing around links */
-  font-size: 16px;
-}
-
-.navbar a:hover {
-  background-color: #F87A53;  /* Darker background on hover */
-  color: #ffffff;
-  border-radius: 4px;      /* Rounded corners on hover */
-}
+    
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #030303;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      margin-top: 0; /* Ensure no margin added */
+      position: relative; /* Ensure it behaves as expected */
+    }
+    
+    .nav-logo {
+      color: #E5E5CB;
+      font-family: "M PLUS Code Latin", monospace;
+      font-size: 20px;
+      margin: 0;
+    }
+    
+    .nav-links {
+      display: flex;
+    }
+    
+    .navbar a {
+      color: #E5E5CB;
+      text-decoration: none;
+      margin: 0 20px;
+      font-family: "M PLUS Code Latin", monospace;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.3s, border-bottom 0.3s;
+      padding-bottom: 5px;
+      border-bottom: 2px solid transparent;
+    }
+    
+    .navbar a:hover {
+      color: #D5CEA3;
+      border-bottom: 2px solid #D5CEA3;
+    }
+    
+    /* Main container */
+    .profile-container {
+      flex-grow: 1;
+      width: 100%;
+      background: #030303;
+      padding: 0 0 50px 0;
+      margin-top: 0; /* Remove any unwanted margin */
+      margin-bottom: 0; /* Ensure no bottom margin */
+    }
 
 
-/* clickable box containers for projects*/
-/* Add this for a flex container */
-.flex-container {
-  display: flex;
-  gap: 20px; /* Space between boxes */
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
-}
-
-.clickable-box {
-  text-decoration: none; /* Remove underline from links */
-  color: #333;
-  width: 250px; /* Set a fixed width for each box */
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  text-align: center; /* Center the text inside the box */
-  transition: transform 0.3s, box-shadow 0.3s;
-  background-color: #fff;
-  padding: 10px; /* Add padding inside the box for spacing */
-}
-
-.clickable-box img {
-  width: 250px; /* Make the image fit the box */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 10px; /* Space between image and text */
-}
-
-.clickable-box p {
-  margin: 10px 0;
-  font-size: 16px;
-  color: #333;
-  padding: 5px 0; /* Adjust padding for better spacing */
-}
-
-
-.carousel-container {
-  position: relative;
-  width: 80%;
-  max-width: 800px;
-  overflow: hidden;
-  border: 2px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.carousel {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel img {
-  width: 100%;
-  flex-shrink: 0;
-}
-
-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  font-size: 18px;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
-}
-
-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
+    
+    /* Background circle */
+    .background-circle-wrapper {
+      position: fixed;
+      top: 50%;
+      right: -10vw;
+      transform: translateY(-50%);
+      pointer-events: none;
+      z-index: 1;
+    }
+    
+    .background-circle {
+      width: 80vw;
+      height: 80vw;
+      background: radial-gradient(circle at 30% 40%, #E5E5CB 20%, #030303 100%);
+      border-radius: 50%;
+      opacity: 0.5;
+      animation: spin 40s linear infinite, blob 20s ease-in-out infinite alternate;
+      transform-origin: center center;
+      transform: translateX(50%) rotate(0deg);
+    }
+    
+    @keyframes spin {
+      0% {
+        transform: translateX(50%) rotate(0deg);
+      }
+      100% {
+        transform: translateX(50%) rotate(360deg);
+      }
+    }
+    
+    @keyframes blob {
+      0% {
+        border-radius: 50% 50% 50% 50%;
+      }
+      25% {
+        border-radius: 45% 55% 60% 40%;
+      }
+      50% {
+        border-radius: 55% 45% 40% 60%;
+      }
+      75% {
+        border-radius: 60% 40% 45% 55%;
+      }
+      100% {
+        border-radius: 50% 50% 50% 50%;
+      }
+    }
+    
+    /* Hero section */
+    .hero-section {
+      width: 100%;
+      text-align: center;
+      z-index: 2;
+      padding: 0 20px;
+      margin-top: 0; /* Ensure no margin pushing it down */
+      position: relative; /* Keep it within the flow */
+      color: #E5E5CB;
+    }
+    
+    
+    .profile-container h1 {
+      font-family: "M PLUS Code Latin", monospace;
+      font-weight: 600;
+      font-size: 80px;
+      text-align: left;
+      margin-left: 10%;
+      margin-top: 17%;
+      margin-bottom: 12px;
+      color: #D5CEA3;
+      position: relative;
+      z-index: 4;
+    }
+    
+    .profile-container h2 {
+      font-family: "M PLUS Code Latin", monospace;
+      font-weight: 400;
+      font-size: 20px;
+      text-align: left;
+      margin-left: 10.5%;
+      margin-top: 0px;
+      color: #E5E5CB;
+      position: relative;
+      z-index: 4;
+    }
+    
+    .profile-container h3 {
+      font-family: "M PLUS Code Latin", monospace;
+      font-weight: 500;
+      font-size: 22px;
+      text-align: left;
+      margin-left: 10.5%;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #123458;
+      position: relative;
+      z-index: 4;
+    }
+    
+    .profile-container p {
+      font-family: "M PLUS Code Latin", monospace;
+      font-weight: 400;
+      font-size: 17px;
+      text-align: left;
+      margin-left: 0;
+      margin-top: 4px;
+      color: #E5E5CB;
+      position: relative;
+      z-index: 4;
+    }
+    
+    /* Skills Pills */
+    .skills-container {
+      margin: 30px 0 30px 10.5%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      max-width: 600px;
+      z-index: 3;
+      position: relative;
+    }
+    
+    .skill-pill {
+      background-color: rgba(229, 229, 203, 0.15);
+      border-radius: 20px;
+      padding: 8px 16px;
+      color: #D5CEA3;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      cursor: default;
+      font-family: "M PLUS Code Latin", monospace;
+    }
+    
+    .skill-pill:hover {
+      background-color: rgba(229, 229, 203, 0.25);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .floating {
+      animation: float 5s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    
+    /* Description Box */
+    .description {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      width: 100%;
+      position: relative;
+      z-index: 3;
+    }
+    
+    .description-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px;
+      background-color: rgba(229, 229, 203, 0.08);
+      border-radius: 20px;
+      width: 75vw;
+      margin-left: 9.5%;
+      margin-right: auto;
+      margin-top: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    
+    .description-text {
+      width: 60%;
+      padding-right: 15px;
+      text-align: left;
+    }
+    
+    .description-image {
+      width: 25%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 60px;
+    }
+    
+    .description-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 30px;
+    }
+    
+    /* Social Buttons */
+    .social-buttons {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 20px;
+      margin-left: 9.5%;
+      gap: 20px;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #BE3D2A;
+      color: #E5E5CB;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      font-family: "M PLUS Code Latin", monospace;
+    }
+    
+    .cta-button:hover {
+      background-color: #a33324;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(190, 61, 42, 0.3);
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 15px;
+    }
+    
+    .social-link {
+      display: flex;
+      align-items: center;
+      color: #D5CEA3;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .social-link:hover {
+      color: #E5E5CB;
+    }
+    
+    /* Terminal Section */
+    .terminal-section {
+      margin: 80px 10% 50px;
+      position: relative;
+      z-index: 3;
+    }
+    
+    .terminal {
+      background-color: #121212;
+      border-radius: 10px;
+      padding: 30px;
+      font-family: "M PLUS Code Latin", monospace;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+    
+    .terminal-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .terminal-buttons {
+      display: flex;
+      gap: 8px;
+    }
+    
+    .terminal-button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    
+    .terminal-close {
+      background-color: #FF5F56;
+    }
+    
+    .terminal-minimize {
+      background-color: #FFBD2E;
+    }
+    
+    .terminal-expand {
+      background-color: #27C93F;
+    }
+    
+    .terminal-title {
+      color: #E5E5CB;
+      font-size: 14px;
+      margin-left: 20px;
+      opacity: 0.7;
+    }
+    
+    .terminal-content {
+      color: #E5E5CB;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    
+    .command-line {
+      display: flex;
+      margin-bottom: 10px;
+    }
+    
+    .prompt {
+      color: #BE3D2A;
+      margin-right: 10px;
+    }
+    
+    .command {
+      color: #E5E5CB;
+    }
+    
+    .command-output {
+      color: #8A8A8A;
+      margin-bottom: 15px;
+      white-space: pre-wrap;
+    }
+    
+    .typing {
+      overflow: hidden;
+      border-right: 2px solid #BE3D2A;
+      white-space: nowrap;
+      margin: 0;
+      letter-spacing: 0.15em;
+      animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+    }
+    
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #BE3D2A }
+    }
+    
+    /* Footer Bar */
+    .bottom-bar {
+      background-color: #030303;
+      color: #E5E5CB;
+      text-align: center;
+      padding: 15px 0;
+      font-family: "M PLUS Code Latin", monospace;
+      font-size: 14px;
+      margin-top: auto; /* This ensures it's pushed to the bottom */
+      width: 100%;
+      z-index: 10;
+      border-top: 1px solid rgba(229, 229, 203, 0.1);
+    }
+    
+    .bottom-bar a {
+      color: #D5CEA3;
+      text-decoration: none;
+      margin: 0 8px;
+      transition: color 0.3s ease;
+    }
+    
+    .bottom-bar a:hover {
+      color: #ffffff;
+    }
+    
+    /* Additional styling */
+    span {
+      color: #D5CEA3;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 1024px) {
+      .profile-container h1 {
+        font-size: 60px;
+      }
+      
+      .description-box {
+        flex-direction: column;
+        width: 85vw;
+      }
+      
+      .description-text, .description-image {
+        width: 100%;
+      }
+      
+      .description-image {
+        margin: 20px 0 0 0;
+        max-width: 300px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        padding: 1rem;
+      }
+      
+      .nav-logo {
+        margin-bottom: 15px;
+      }
+      
+      .profile-container h1 {
+        font-size: 40px;
+        margin-top: 10%;
+      }
+      
+      .profile-container h2 {
+        font-size: 18px;
+      }
+      
+      .skills-container {
+        margin-top: 20px;
+      }
+      
+      .description-box {
+        padding: 15px;
+      }
+    }

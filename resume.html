@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Title</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume — Angel Benny Paul</title>
+  <link rel="stylesheet" href="style.css"/>
 
-        #animatedTitle {
-            font-size: 3em;
-            font-weight: bold;
-            transition: all 0.3s ease-in-out;
-        }
-    </style>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=M+PLUS+Code+Latin:wght@100..700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <h1 id="animatedTitle">Welcome to My Website!</h1>
 
-    <script>
-        // Select the title element
-        const title = document.getElementById('animatedTitle');
+  <div class="background-circle-wrapper">
+    <div class="background-circle"></div>
+  </div>
 
-        // Animation variables
-        let colorIndex = 0;
-        const colors = ['red', 'blue', 'green', 'purple', 'orange'];
-        let position = 0;
-        let maxPosition = 200;
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <h2 class="nav-logo">angelbennypaul</h2>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+    </div>
+  </nav>
 
-        // Function to animate the title
-        function animateTitle() {
-            // Change color
-            title.style.color = colors[colorIndex];
-            colorIndex = (colorIndex + 1) % colors.length;
+  <!-- Page Title -->
+  <div class="profile-container">
+    <h1 style="margin-left: 10.5%; font-size: 48px; color: #D5CEA3;">Resume</h1>
 
-            // Move the title horizontally
-            position = (position + 10) % maxPosition;
-            title.style.transform = `translateX(${position}px)`;
+    <!-- PDF Viewer -->
+    <div style="display: flex; justify-content: center; margin-top: 30px;">
+      <iframe 
+        src="assets\Angel Benny Paul Resume.pdf" 
+        width="80%" 
+        height="800px" 
+        style="border: 2px solid #D5CEA3; border-radius: 8px;">
+      </iframe>
+    </div>
 
-            // Reset position after it reaches the maxPosition
-            if (position === 0) {
-                title.style.fontSize = `${Math.random() * 4 + 2}em`; // Change font size randomly
-            }
-        }
+    <!-- Optional: Download link -->
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="assets\Angel Benny Paul Resume.pdf" target="_blank" style="color: #D5CEA3; text-decoration: underline;">
+        Download PDF
+      </a>
+    </div>
+  </div>
 
-        // Set an interval to call the animation every 500ms
-        setInterval(animateTitle, 500);
-    </script>
+  <!-- Footer -->
+  <div class="bottom-bar">
+    <p>
+      &copy; 2025 Angel Benny Paul • 
+      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/your-github" target="_blank">GitHub</a> |
+      <a href="mailto:your.email@example.com">Email</a>
+    </p>
+  </div>
+
 </body>
 </html>

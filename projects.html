@@ -3,45 +3,327 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Micro+5&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Micro+5&display=swap">
+  <title>Angel Benny Paul's Portfolio</title>
+  <!--Angel Project Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap" rel="stylesheet">
+
+  <!--Paragraph Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=M+PLUS+Code+Latin:wght@100..700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <!-- Navigation Bar -->
+  
+  <!-- Navigation Bar -->
   <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="projects.html">Projects</a>
+    <h2 class="nav-logo">angelbennypaul</h2>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+    </div>
   </nav>
 
+  <!-- Main Content -->
+  <div class="profile-container">
+    <!-- Background Circle -->
+    <div class="background-circle-wrapper">
+      <div class="background-circle"></div>
+    </div>
+    
+    <!-- Particles Container -->
+    <div id="particles" class="particles"></div>
+    
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <h1><span class="auto-type"></span></h1>
+      <h2><span class="auto-type2"></span></h2>
+      
+      <!-- Skills Pills -->
+      <div class="skills-container">
+        <div class="skill-pill floating" style="animation-delay: 0s">Mechatronics</div>
+        <div class="skill-pill floating" style="animation-delay: 0.5s">Robotics</div>
+        <div class="skill-pill floating" style="animation-delay: 1s">Biomedical</div>
+        <div class="skill-pill floating" style="animation-delay: 1.5s">Simulink</div>
+        <div class="skill-pill floating" style="animation-delay: 2s">Autonomous</div>
+        <div class="skill-pill floating" style="animation-delay: 0.7s">Healthcare</div>
+      </div>
+      
+      <h3>angel:~/portfolio$ <span class="auto-type3"></span></h3>
+    </div>
 
-<div class="projectheader-container">
-  <h1>Projects</h1>
-  <p>This is the about page of my website. Here, I share more information about myself.</p>
-  <a href="index.html">Back to Home</a>
-</div>
+    <!-- Featured Projects Section -->
+    <div class="featured-work">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="featured-projects">
+        <div class="project-card">
+          <div class="project-title">SAE GM AutoDrive Challenge</div>
+          <div class="project-description">
+            Led a team of 4 to design a level 5 autonomous car for individuals with cerebral palsy, earning 4th place among 12 universities across North America.
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Autonomous</span>
+            <span class="project-tag">Accessibility</span>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-title">KINARM Robotic Systems</div>
+          <div class="project-description">
+            Enhanced testing protocols for clinical diagnostics using Simulink, managed data integrity in REDCap, and collaborated with healthcare professionals.
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Biomedical</span>
+            <span class="project-tag">Simulink</span>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-title">Embedded Systems Design</div>
+          <div class="project-description">
+            Designed and prototyped innovative solutions focused on blending robotics with human-centered design principles.
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Embedded</span>
+            <span class="project-tag">Prototyping</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- About Me Preview -->
+    <div class="description-box">
+      <div class="description-text">
+        <p>
+          I'm a Mechatronics and Robotics Engineering student at Queen's University with a strong interest in biomedical engineering and designing systems that directly impact healthcare. I'm passionate about blending robotics and human-centered design to create accessible, user-friendly solutions that improve lives.
+        </p>
+        <p>
+          My hands-on experience includes working with KINARM robotic systems at the LIMB Lab, where I focused on improving testing protocols and supporting clinical diagnostics. I developed and refined testing programs using Simulink, managed data integrity in REDCap, and collaborated with healthcare professionals during data collection, deepening my understanding of assistive technologies.
+        </p>
+        <p>
+          A pivotal moment in my third year was joining Queen's AutoDrive, where I worked in both the embedded systems and operations divisions. In the SAE GM AutoDrive Mobility Innovation Challenge 2024, I led a team of four to design a level 5 autonomous car aimed at assisting people with disabilities, particularly focusing on individuals with cerebral palsy.
+        </p>
+        <div class="social-buttons">
+          <a href="about.html" class="cta-button">Learn More</a>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://github.com/your-github" target="_blank" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="mailto:your.email@example.com" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="description-image">
+        <img src="assets/angel_headshot.jpg" alt="Angel Benny Paul">
+      </div>
+    </div>
+    
+    <!-- Terminal Section -->
+    <div class="terminal-section">
+      <div class="terminal">
+        <div class="terminal-header">
+          <div class="terminal-buttons">
+            <div class="terminal-button terminal-close"></div>
+            <div class="terminal-button terminal-minimize"></div>
+            <div class="terminal-button terminal-expand"></div>
+          </div>
+          <div class="terminal-title">angel@portfolio: ~/projects</div>
+        </div>
+        <div class="terminal-content">
+          <div class="command-line">
+            <div class="prompt">angel@portfolio:~$</div>
+            <div class="command">ls -la projects/</div>
+          </div>
+          <div class="command-output">
+total 4
+drwxr-xr-x  5 angel users 4096 May 5 2025 .
+drwxr-xr-x 15 angel users 4096 May 5 2025 ..
+drwxr-xr-x  3 angel users 4096 May 5 2025 autodrive_mobility
+drwxr-xr-x  4 angel users 4096 May 5 2025 kinarm_systems
+drwxr-xr-x  2 angel users 4096 May 5 2025 assistive_tech
+          </div>
+          <div class="command-line">
+            <div class="prompt">angel@portfolio:~$</div>
+            <div class="command">cat ~/about/skills.txt</div>
+          </div>
+          <div class="command-output">
+• Robotics Engineering
+• Mechatronics Design
+• Simulink Programming
+• Embedded Systems
+• Healthcare Technology
+• Human-Centered Design
+• Project Leadership
+• Technical Communication
+          </div>
+          <div class="command-line">
+            <div class="prompt">angel@portfolio:~$</div>
+            <div class="command typing">./contact_me.sh</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="flex-container">
-  <a href="TronassicParkProject.html" class="clickable-box">
-      <img src="assets/Tronassic_Park.jpg" alt="Example 1">
-      <p>Click me for Example 1</p>
-  </a>
-  <a href="#" class="clickable-box">
-      <img src="assets/Angel_Benny_Paul.jpg" alt="Example 2">
-      <p>Click me for Example 2</p>
-  </a>
-  <a href="#" class="clickable-box">
-    <img src="assets/Angel_Benny_Paul.jpg" alt="Example 2">
-    <p>Click me for Example 2</p>
-  </a>
-  <a href="#" class="clickable-box">
-    <img src="assets/Angel_Benny_Paul.jpg" alt="Example 2">
-    <p>Click me for Example 2</p>
-  </a>
-</div>
+  <div class="bottom-bar">
+    <p>
+      &copy; 2025 Angel Benny Paul • 
+      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a> | 
+      <a href="https://github.com/your-github" target="_blank">GitHub</a> | 
+      <a href="mailto:your.email@example.com">Email</a>
+    </p>
+  </div>
 
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+    // Typed.js for dynamic text
+    var typed = new Typed(".auto-type", {
+      strings: ["The Angel Project"],
+      typeSpeed: 70,
+      backSpeed: 150,
+      loop: false,
+    });
+
+    var typed2 = new Typed(".auto-type2", {
+      strings: ["Mechatronics and Robotics engineering student @ Queen's University"],
+      typeSpeed: 15,
+      backSpeed: 150,
+      loop: false,
+      showCursor: true,
+      cursorChar: ' ',
+    });
+
+    var typed3 = new Typed(".auto-type3", {
+      strings: ["./whoami.sh"],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true,
+      showCursor: true,
+      cursorChar: '|',
+    });
+
+    // Initialize particles.js
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof particlesJS !== 'undefined') {
+        particlesJS('particles', {
+          "particles": {
+            "number": {
+              "value": 50,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#E5E5CB"
+            },
+            "shape": {
+              "type": "circle",
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              }
+            },
+            "opacity": {
+              "value": 0.3,
+              "random": true,
+              "anim": {
+                "enable": true,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 3,
+              "random": true,
+              "anim": {
+                "enable": true,
+                "speed": 2,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#E5E5CB",
+              "opacity": 0.2,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 1,
+              "direction": "none",
+              "random": true,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "grab"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 140,
+                "line_linked": {
+                  "opacity": 0.5
+                }
+              },
+              "push": {
+                "particles_nb": 4
+              }
+            }
+          },
+          "retina_detect": true
+        });
+      }
+    });
+    
+    // Add scroll animation for elements
+    window.addEventListener('scroll', function() {
+      const scrollable = document.querySelectorAll('.project-card, .description-box, .terminal');
+      scrollable.forEach(element => {
+        const position = element.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2;
+        
+        if (position < screenPosition) {
+          element.classList.add('show-element');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
